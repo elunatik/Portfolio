@@ -1,122 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmitt Luna Portfolio</title>
 
   <!-- Bootstrap CSS -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
   <style>
-    body { padding-top: 60px; }
-    .hero {
-      padding: 60px 0;
-      text-align: center;
-      background-color: #f8f9fa;
-      border-bottom: 1px solid #eee;
+    body.dark-mode {
+      background-color: #121212;
+      color: #e1e1e1;
     }
-    .project-card { min-height: 180px; }
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      border-color: #333;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
   </style>
 </head>
 
 <body>
+  <!-- Dark Mode Toggle -->
+  <button class="btn btn-secondary toggle-btn" onclick="toggleDarkMode()">
+    Toggle Dark Mode
+  </button>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
-  </div>
-</nav>
+  <div class="container mt-5">
+    <header class="text-center mb-5">
+      <h1 class="fw-bold">Emmitt Luna</h1>
+      <p class="lead">Integration Engineer • Business Analyst • EDI Specialist</p>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1 class="fw-bold">Hello, I'm Emmitt Luna</h1>
-    <p class="lead">Business Analyst • Developer • EDI Specialist • Tech Enthusiast</p>
-  </div>
-</section>
+    <!-- About Me Section -->
+    <section id="about" class="mb-5">
+      <h2>About Me</h2>
+      <p>
+        I'm a tech-driven problem solver who loves building clean integrations and
+        finding smarter ways to move data. I enjoy breaking down messy processes,
+        turning them into something efficient, predictable, and easy to maintain.
+        I work well in fast-paced environments, ask the right questions, and I’m
+        always learning something new to stay ahead in the integration and
+        automation space.
+      </p>
+    </section>
 
-<!-- ABOUT -->
-<section class="py-5">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Emmitt. I love solving problems, building useful things, and making complicated stuff feel simple. 
-      I’ve worked across operations, EDI, e-commerce, and tech workflows—and I’m always looking for smarter ways to get things done. 
-      I enjoy learning, improving processes, and picking up new skills along the way.
-    </p>
-  </div>
-</section>
+    <!-- Experience Section -->
+    <section id="experience" class="mb-5">
+      <h2>Professional Experience</h2>
 
-<!-- PROJECTS -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-4">Projects</h2>
-
-    <div class="row g-4">
-
-      <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Project Title 1</h5>
-            <p class="card-text">Short description of your project.</p>
-            <a href="#" class="btn btn-primary btn-sm">View Project</a>
-          </div>
-        </div>
+      <div class="card p-3 mb-3">
+        <h4>Integration Engineer — EFW Logistics <span class="text-muted">(06/2025 – Present)</span></h4>
+        <ul>
+          <li>TIE Kinetix eVision Integrations</li>
+          <li>Created GoAnywhere Project Workflows</li>
+          <li>Project sourcing using GitHub and Visual Studio</li>
+          <li>MSSQL DB testing for EDI transactions and status updates</li>
+        </ul>
       </div>
 
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Project Title 2</h5>
-            <p class="card-text">Short description of your project.</p>
-            <a href="#" class="btn btn-primary btn-sm">View Project</a>
-          </div>
-        </div>
+      <div class="card p-3 mb-3">
+        <h4>Integration Engineer — RJW Logistics <span class="text-muted">(11/2024 – 06/2025)</span></h4>
+        <ul>
+          <li>Cleo Integrations</li>
+          <li>Amazon Vendor Central testing</li>
+        </ul>
       </div>
 
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Project Title 3</h5>
-            <p class="card-text">Short description of your project.</p>
-            <a href="#" class="btn btn-primary btn-sm">View Project</a>
-          </div>
-        </div>
+      <div class="card p-3 mb-3">
+        <h4>Integration Specialist — Arrive Logistics <span class="text-muted">(10/2022 – 11/2024)</span></h4>
+        <ul>
+          <li>Managed API + EDI partner integrations</li>
+          <li>Provided post-production support and troubleshooting</li>
+          <li>Cleo Studio certified — data transformation and endpoint creation</li>
+          <li>Worked with Postman, SQL, and NewRelic dashboards</li>
+        </ul>
       </div>
 
-    </div>
+      <div class="card p-3 mb-3">
+        <h4>Business Analyst — Archer <span class="text-muted">(02/2022 – 10/2022)</span></h4>
+        <ul>
+          <li>Requirements gathering and project lifecycle support</li>
+          <li>Created QA test cases and automation improvements</li>
+          <li>Used SQL Server to troubleshoot data issues</li>
+        </ul>
+      </div>
+
+      <div class="card p-3 mb-3">
+        <h4>Business Analyst — Flow-Cal <span class="text-muted">(04/2019 – 02/2022)</span></h4>
+        <ul>
+          <li>Used Kanban workflow for product maintenance</li>
+          <li>Created documentation and release notes</li>
+          <li>Built and executed test cases using Oracle SQL</li>
+        </ul>
+      </div>
+
+      <div class="card p-3 mb-3">
+        <h4>Business Analyst — Di-Central <span class="text-muted">(01/2017 – 04/2019)</span></h4>
+        <ul>
+          <li>Created functional requirement documents</li>
+          <li>Led daily Scrum meetings</li>
+          <li>Created EDI demos and team training</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-5">
+      <h2>Contact</h2>
+      <p>Email: Lunae215@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/emmitt-luna-7bb52a200</p>
+    </section>
   </div>
-</section>
 
-<!-- CONTACT -->
-<section class="py-5">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>If you’d like to reach out, here’s my info:</p>
-    <ul>
-      <li>Email: <strong>you@example.com</strong></li>
-      <li>LinkedIn: <a href="#">Your Profile</a></li>
-      <li>GitHub: <a href="#">Your GitHub</a></li>
-    </ul>
-  </div>
-</section>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- FOOTER -->
-<footer class="text-center py-3 bg-light mt-4">
-  <small>© 2025 Your Name</small>
-</footer>
-
-<!-- Bootstrap JS -->
-<script 
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
